@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <title>Invoice Service Motor</title>
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    margin: 0;
+                    padding: 20px;
+                    background-color: #f4f4f4;
+                }
+                .invoice-box {
+                    max-width: 800px;
+                    margin: auto;
+                    padding: 30px;
+                    border: 1px solid #eee;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+                    background-color: #fff;
+                }
+                .invoice-box h1 {
+                    text-align: center;
+                    margin-bottom: 20px;
+                }
+                .invoice-box h2 {
+                    margin-top: 0;
+                }
+                .invoice-header {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+                .invoice-header .info {
+                    text-align: right;
+                }
+                .invoice-header img {
+                    width: 100px;
+                    height: auto;
+                }
+                table {
+                    width: 100%;
+                    line-height: 1.6;
+                    text-align: left;
+                    border-collapse: collapse;
+                }
+                table th, table td {
+                    padding: 8px;
+                    border: 1px solid #ddd;
+                }
+                table th {
+                    background-color: #f2f2f2;
+                }
+                table tfoot td {
+                    font-weight: bold;
+                }
+                .print-button {
+                    display: block;
+                    width: 100%;
+                    max-width: 200px;
+                    margin: 20px auto;
+                    padding: 10px;
+                    text-align: center;
+                    background-color: #4CAF50;
+                    color: white;
+                    border: none;
+                    cursor: pointer;
+                    font-size: 16px;
+                }
+                .print-button:hover {
+                    background-color: #45a049;
+                }
+            </style>
+        </head>
+        <body>
+                <div class="invoice-box">
+                    <h1>Invoice Service Motor</h1>
+                    <h1>3R GARAGE</h1>
+                    <div class="invoice-header">
+                        <div class="info">
+                            <p>Jl. Pugeran, Suryodiningratan, Kec. Mantrijeron, Kota Yogyakarta, Daerah Istimewa Yogyakarta 55141</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <p><strong>Nama Pelanggan:</strong>Nabil Azzuhdi</p>
+                    <p><strong>Jenis Motor:</strong>matic</p>
+                    <p><strong>Nomor Plat Motor:</strong>B 4 BI</p>
+                    <h3>Jenis Service</h3>
+                    <table>
+                        <tr>
+                            <th>Nama Service</th>
+                            <th>Harga Service</th>
+                        </tr>
+                        <tr>
+                            <td>kampas rem</td>
+                            <td>15000</td>
+                        </tr><tr>
+                            <td>komster</td>
+                            <td>30000</td>
+                        </tr>
+                        <tfoot>
+                            <tr>
+                                <td>Total</td>
+                                <td>45000</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <button class="print-button" onclick="window.print()">Cetak</button>
+                </div>
+        </body>
+        </html>
+        
